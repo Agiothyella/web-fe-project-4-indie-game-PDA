@@ -44,7 +44,16 @@
   user-select: none !important;
 }
 
+.u-undragable {
+  pointer-events: none !important;
+}
+
 .u-visible {
   opacity: 1 !important;
   visibility: visible !important;
+}
+
+.u-invisible {
+  opacity: 0 !important;
+  visibility: hidden !important;
 }

@@ -1,18 +1,23 @@
 // COLORS
-$color-primary: #f0f2eb;
-$color-secondary: #b5592a;
-$color-secondary-dark: #70371a;
-$color-tertiary: #f09027;
-$color-quartenery: #8cbeaa;
+$color-primary: #393e46;
+$color-secondary: #5c636e;
+$color-tertiary: #c0b95f;
+$color-tertiary-light: #e2dfb4;
+$color-quartenery: #f2f2f2;
 
-$color-light-1: #fff;
-$color-light-2: rgb(190, 190, 190);
-$color-dark-1: #000;
-$color-dark-2: rgb(61, 61, 61);
+$color-light: #fff;
+$color-gray-1: rgb(190, 190, 190);
+$color-gray-2: rgb(75, 75, 75);
+$color-dark: #000;
 
-$color-font-dark: #000;
-$color-font-grey: rgb(70, 70, 70);
+$color-font-dark: rgb(32, 32, 32);
+$color-font-grey: rgb(190, 190, 190);
 $color-font-light: #fff;
+
+$font-cinzel: "Cinzel Decorative", cursive;
+$font-forum: "Forum", cursive;
+$font-bellefair: "Bellefair", serif;
+$font-mulish: "Mulish", sans-serif;
 
 // BREAKPOINTS
 $bp-infinite: 112.5em; //1800px

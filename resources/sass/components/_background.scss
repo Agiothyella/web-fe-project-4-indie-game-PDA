@@ -1,0 +1,37 @@
+.background {
+  &--1 {
+    background-image: linear-gradient(
+        to bottom right,
+        rgba($color-dark, 0.05),
+        rgba($color-dark, 0.05)
+      ),
+      url("../img/bg-1st.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--2 {
+    background-image: linear-gradient(
+        to bottom right,
+        rgba($color-dark, 0.05),
+        rgba($color-dark, 0.05)
+      ),
+      url("../img/bg-2nd.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--3 {
+    background-image: linear-gradient(
+        to bottom right,
+        rgba($color-dark, 0.05),
+        rgba($color-dark, 0.05)
+      ),
+      url("../img/bg-3rd.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

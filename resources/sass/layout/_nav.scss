@@ -1,0 +1,164 @@
+.nav {
+  &__header {
+  }
+
+  &__body {
+  }
+}
+
+.nav {
+  &__list {
+    position: relative;
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    &--header {
+      margin-top: 8px;
+      box-shadow: 0 5px 20px $color-primary;
+
+      background-image: url("../components/navbar-top.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    &--subheader {
+      margin-top: 8px;
+
+      column-gap: 3rem;
+    }
+  }
+
+  &__item {
+    transition: box-shadow 0.4s;
+
+    &:not(:first-child) {
+      &::before {
+        content: "";
+        background-image: linear-gradient(
+          to bottom,
+          transparent,
+          rgba($color-light, 0.3),
+          transparent
+        );
+      }
+    }
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        background-image: linear-gradient(
+          to bottom,
+          transparent,
+          rgba($color-light, 0.3),
+          transparent
+        );
+      }
+    }
+
+    &--header {
+      &:not(:first-child) {
+        &::before {
+          padding: 12px 0.25px;
+        }
+      }
+
+      &:not(:last-child) {
+        &::after {
+          padding: 12px 0.25px;
+        }
+      }
+
+      &:hover {
+        box-shadow: inset 0px 0px 20px -6px rgba($color-tertiary, 0.6);
+      }
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+
+      display: inline-block;
+      width: max-content;
+
+      transition: color 0.2s, text-shadow 0.2s;
+    }
+
+    &:hover,
+    &:active {
+    }
+
+    &--header {
+      &:link,
+      &:visited {
+        color: $color-font-light;
+        font-family: $font-cinzel;
+        font-size: 1.6rem;
+
+        padding: 1.5rem 4rem;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-tertiary-light;
+        text-shadow: 0 0 5px $color-light;
+      }
+    }
+
+    &--subheader {
+      &:link,
+      &:visited {
+        color: $color-font-light;
+        font-family: $font-bellefair;
+        font-size: 1.5rem;
+
+        padding: 0.5rem 1rem;
+
+        transition: all 0.3s;
+
+        text-shadow: 0.5px 0.5px 0 $color-font-dark,
+          0.5px -0.5px 0 $color-font-dark, -0.5px 0.5px 0 $color-font-dark,
+          -0.5px -0.5px 0 $color-font-dark;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-tertiary-light;
+        text-shadow: 0 0 1px $color-quartenery;
+      }
+    }
+  }
+}
+
+.nav {
+  &__frame {
+    position: absolute;
+
+    &--horizontal {
+      img {
+        z-index: 1;
+        height: 2px;
+      }
+    }
+
+    &--vertical {
+      img {
+        z-index: 1;
+        height: 145%;
+      }
+    }
+  }
+}
+
+.nav__header__decoration {
+  z-index: 2 !important;
+  height: 35px !important;
+  width: auto !important;
+  transform: translate(-5px, 14px) !important;
+}

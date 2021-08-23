@@ -11,18 +11,22 @@ html {
   font-size: 62.5%; //1 rem = 10px
   scroll-behavior: smooth;
 
-  @media only screen and (max-width: 1200px) {
-    font-size: 50%; //1 rem = 8px
-  }
+  // @media only screen and (max-width: 1200px) {
+  //   font-size: 50%; //1 rem = 8px
+  // }
 }
 
 body {
   background-color: $color-primary;
-  color: $color-font-dark;
+  color: $color-font-light;
 }
 
 img {
   font-size: 1.2rem;
   object-fit: cover;
   object-position: center;
+}
+
+::selection {
+  color: $color-tertiary;
 }

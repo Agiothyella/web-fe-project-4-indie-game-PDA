@@ -7,11 +7,14 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/background";
 @import "components/button";
+@import "components/frame";
 
 @import "layout/footer";
 @import "layout/gameplay";
 @import "layout/header";
+@import "layout/introduction";
 @import "layout/media";
 @import "layout/nav";
 @import "layout/news";

@@ -1,0 +1,99 @@
+.container {
+  display: grid;
+  grid-template-columns: [full-start] 1fr [center-start] 110rem [center-end] 1fr [full-end];
+}
+
+.background {
+  z-index: -1;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/bg-top.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  transform: translate3d(0, 0, 0);
+  transition: all 0.8s;
+
+  &__wrapper {
+    position: relative;
+    max-width: 150rem;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+.nav {
+  &__header {
+    margin-left: 15%;
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__body {
+    grid-column: center-start / center-end;
+    margin-bottom: 5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+.main__logo {
+  position: fixed;
+  top: -5px;
+  left: 30px;
+
+  img {
+    height: 200px;
+  }
+}
+
+.content {
+  grid-column: center-start / center-end;
+  margin-top: 40vh;
+  padding-bottom: 5vh;
+}
+
+.introduction {
+  grid-column: center-start / center-end;
+}
+
+.sections__wrapper {
+  grid-column: center-start / center-end;
+
+  padding: 4rem 6rem;
+  border: 1px solid $color-secondary;
+  box-shadow: rgba($color-dark, 0.5) 0px 25px 50px -12px,
+    rgba($color-dark, 0.05) 20px 20px 6px 0px inset,
+    rgba($color-dark, 0.05) -20px -20px 6px 1px inset;
+  background-image: url("../components/texture.jpg");
+  opacity: 0.95;
+
+  section {
+    opacity: 1;
+  }
+}
+
+.gameplay {
+}
+
+.world {
+}
+
+.features__section {
+}

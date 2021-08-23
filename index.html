@@ -4,126 +4,506 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&family=Cinzel+Decorative&family=Forum&family=Mulish:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="resources/css/main.css" />
     <title>Agiothyella RPG</title>
   </head>
   <body class="container">
+    <div class="background background--1">&nbsp;</div>
+    <div class="background background--2">&nbsp;</div>
+    <div class="background background--3">&nbsp;</div>
+
     <header id="header" class="header">
-      <nav class="nav__header">
-        <ul class="nav__list--header">
-          <li class="nav__item--header">
-            <a href="#" class="nav__link--header">Overview</a>
-          </li>
-          <li class="nav__item--header">
-            <a href="#" class="nav__link--header">Gameplay</a>
-          </li>
-          <li class="nav__item--header">
-            <a href="#" class="nav__link--header">World</a>
-          </li>
-          <li class="nav__item--header">
-            <a href="#" class="nav__link--header">Getting Started</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__wrapper">
+        <div class="nav__header">
+          <div class="header__logo">
+            <img src="resources/img/Logo.png" alt="RYSE: Kingdoms Logo" />
+          </div>
+          <nav class="header__nav">
+            <ul class="nav__list nav__list--header">
+              <li class="frame frame--top nav__frame nav__frame--horizontal">
+                <img
+                  src="resources/components/navbar-top-decoration.png"
+                  class="nav__header__decoration"
+                />
+                <img src="resources/components/navbar-horizontal-frame.png" />
+              </li>
+              <li class="frame frame--right nav__frame nav__frame--vertical">
+                <img src="resources/components/navbar-top-right.png" />
+              </li>
+              <li class="frame frame--bottom nav__frame nav__frame--horizontal">
+                <img src="resources/components/navbar-horizontal-frame.png" />
+              </li>
+              <li class="frame frame--left nav__frame nav__frame--vertical">
+                <img src="resources/components/navbar-top-left.png" />
+              </li>
+              <li class="nav__item nav__item--header">
+                <a href="#" class="nav__link nav__link--header">Overview</a>
+              </li>
+              <li class="nav__item nav__item--header">
+                <a href="#" class="nav__link nav__link--header">Gameplay</a>
+              </li>
+              <li class="nav__item nav__item--header">
+                <a href="#" class="nav__link nav__link--header">World</a>
+              </li>
+              <li class="nav__item nav__item--header">
+                <a href="#" class="nav__link nav__link--header"
+                  >Getting Started</a
+                >
+              </li>
+            </ul>
+            <ul class="nav__list nav__list--subheader">
+              <li class="nav__item nav__item--subheader">
+                <a href="#" class="nav__link nav__link--subheader">Blog</a>
+              </li>
+              <li class="nav__item nav__item--subheader">
+                <a href="#" class="nav__link nav__link--subheader">Media</a>
+              </li>
+              <li class="nav__item nav__item--subheader">
+                <a href="#" class="nav__link nav__link--subheader">Community</a>
+              </li>
+              <li class="nav__item nav__item--subheader">
+                <a href="#" class="nav__link nav__link--subheader">FAQ</a>
+              </li>
+              <li class="nav__item nav__item--subheader">
+                <a href="#" class="nav__link nav__link--subheader">Support</a>
+              </li>
+              <li class="nav__item nav__item--subheader">
+                <a href="#" class="nav__link nav__link--subheader">Spec</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header__copyright"><p>Copyright© 2021 Agiothyella</p></div>
+
+        <div class="header__links">
+          <img src="resources/img/esrb.jpg" alt="ESRB Mature" />
+          <a href="#">RYSE: Kingdoms</a>
+          <p>by &nbsp;<a href="#">Agiothyella Game Studios</a></p>
+        </div>
+
+        <div class="header__texts">
+          <h1 class="t-header-1 header__title">Your Jouney Starts Here...</h1>
+          <p class="header__text">
+            Be the person you want as you explore the wilderness, discover the
+            unknown, and conquer the vast land of Middle-Continent. A legend,
+            sung by generations ahead, will be unfold now...
+          </p>
+        </div>
+
+        <div class="header__scroll">
+          <a href="#content">
+            <strong>More</strong>
+            &bigvee;</a
+          >
+        </div>
+      </div>
     </header>
 
-    <nav class="nav__body">
-      <ul class="nav__list--header">
-        <li class="nav__item--header">
-          <a href="#" class="nav__link--header">Blog</a>
+    <div class="main__logo">
+      <a href="#"> <img src="resources/img/logo-banner.png" alt="" /></a>
+    </div>
+
+    <div id="content" class="content">&nbsp;</div>
+
+    <nav id="body" class="nav__body">
+      <ul class="nav__list nav__list--body">
+        <li class="nav__item nav__item--body">
+          <a href="#" class="nav__link nav__link--body">Blog</a>
         </li>
-        <li class="nav__item--header">
-          <a href="#" class="nav__link--header">Media</a>
+        <li class="nav__item nav__item--body">
+          <a href="#" class="nav__link nav__link--body">Media</a>
         </li>
-        <li class="nav__item--header">
-          <a href="#" class="nav__link--header">Community</a>
+        <li class="nav__item nav__item--body">
+          <a href="#" class="nav__link nav__link--body">Community</a>
         </li>
-        <li class="nav__item--header">
-          <a href="#" class="nav__link--header">FAQ</a>
+        <li class="nav__item nav__item--body">
+          <a href="#" class="nav__link nav__link--body">FAQ</a>
         </li>
-        <li class="nav__item--header">
-          <a href="#" class="nav__link--header">Support</a>
+        <li class="nav__item nav__item--body">
+          <a href="#" class="nav__link nav__link--body">Support</a>
         </li>
-        <li class="nav__item--header">
-          <a href="#" class="nav__link--header">Spec</a>
+        <li class="nav__item nav__item--body">
+          <a href="#" class="nav__link nav__link--body">Spec</a>
         </li>
       </ul>
     </nav>
-    <section id="introduction" class="introduction"></section>
 
-    <section id="gameplay" class="gameplay">
-      <section id="features">
-        <section class="magic">
-          <img src="" alt="Magic" class="features__img" />
-          <div class="features__description">
-            <p></p>
-          </div>
-        </section>
-        <section class="alchemy">
-          <img src="" alt="Alchemy" class="features__img" />
-          <div class="features__description">
-            <p></p>
-          </div>
-        </section>
-        <section class="crafting">
-          <img src="" alt="Crafting" class="features__img" />
-          <div class="features__description">
-            <p></p>
-          </div>
-        </section>
-      </section>
-
-      <section id="class">
-        <section class="class__container">
-          <img src="" alt="Class" class="class__img" />
-          <div class="class__description">
-            <p></p>
-          </div>
-        </section>
-      </section>
+    <section id="introduction" class="introduction">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores
+      reprehenderit delectus deserunt libero magni rerum natus dolores quia,
+      quaerat, nulla architecto provident saepe accusamus, optio ad voluptatum
+      facilis nihil? Accusantium!
     </section>
 
-    <section id="world" class="world">
-      <section id="race" class="race">
-        <section class="race__container">
-          <img src="" alt="Race" class="race__img" />
-          <div class="race__description">
-            <p></p>
+    <div class="sections__wrapper">
+      <section id="gameplay" class="gameplay">
+        <section id="features">
+          <div class="features__header">
+            <h3 class="features__title t-header-3">Features</h3>
+            <p class="features__brief">
+              What this game offers differenly. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit, illo aperiam.
+            </p>
           </div>
+          <section class="features__section features__section--magic">
+            <h4 class="t-header-4">Magic Tree</h4>
+            <img src="" alt="Magic" class="features__img" />
+            <div class="features__text">
+              <p class="features__description">
+                Magic is learned, not earned. Dedicate your body to light magic
+                or corrupt it with dark magic. Even though magic act as second
+                to weapons, learning it gives more advantages than not. Lorem
+                ipsum dolor sit, amet consectetur adipisicing elit. Tempore
+                adipisci praesentium aperiam quia, nisi odio autem? Rem, atque
+                deleniti. Iusto, est laboriosam?
+              </p>
+              <p class="features__summary">
+                Learn magic by traning from masters according to your magic tree
+              </p>
+            </div>
+          </section>
+          <section class="features__section features__section--talent">
+            <h4 class="t-header-4">Talent Progression</h4>
+            <img src="" alt="Talent" class="features__img" />
+            <div class="features__text">
+              <p class="features__description">
+                Talent is learned from everyday activity, such as crafting
+                armor, pickpocketing. Even if you have high level, talent is
+                still something you need to learn. Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Tempore adipisci praesentium
+                aperiam quia, id optio cumque consequuntur nisi odio autem? Rem,
+                atque deleniti. Iusto, mollitia earum ipsam nisi est laboriosam?
+              </p>
+              <p class="features__summary">
+                Learn new talent or hone one you have by doing related activity
+              </p>
+            </div>
+          </section>
+          <section class="features__section features__section--alchemy">
+            <h4 class="t-header-4">Alchemy Recipe</h4>
+            <img src="" alt="Alchemy" class="features__img" />
+            <div class="features__text">
+              <p class="features__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                cumque atque, obcaecati fugiat similique blanditiis vel minima
+                earum. Impedit asperiores eum soluta tempore laborum nostrum
+                aliquid esse architecto et fugit. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Assumenda ullam consequuntur vitae
+                labore possimus, dolor temporibus soluta quam repellat alias,
+                accusamus hic. Beatae numquam distinctio eius explicabo quidem.
+                Possimus, iusto.
+              </p>
+              <p class="features__summary">
+                Discover alchemy recipes by experimenting or being taught
+              </p>
+            </div>
+          </section>
+          <section class="features__section features__section--crafting">
+            <h4 class="t-header-4">Crafting Blueprints</h4>
+            <img src="" alt="Crafting" class="features__img" />
+            <div class="features__text">
+              <p class="features__description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laboriosam dolorum ab, a deleniti, quo odit vel temporibus iste
+                fuga ipsam enim! Obcaecati rem nisi harum voluptatum veritatis.
+                Doloremque, ut dolorem! Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Excepturi quam neque ex nisi vitae quidem esse
+                consequatur, est aliquid laboriosam explicabo earum, officiis
+                recusandae sapiente voluptates distinctio tenetur eaque ullam?
+              </p>
+              <p class="features__summary">
+                Discover crafting blueprints by learning from expert
+              </p>
+            </div>
+          </section>
+        </section>
+
+        <section id="class">
+          <div class="class__header">
+            <h3 class="class__title t-header-3">Class</h3>
+            <p class="class__brief">
+              Choose your style of fight. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Enim nulla distinctio reprehenderit dolore aut.
+            </p>
+          </div>
+          <section class="class__section class__section--fighter">
+            <h4 class="t-header-4">Fighter</h4>
+            <img src="" alt="Fighter" class="class__img" />
+            <div class="class__description">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit non cumque sequi eos quidem aperiam quod quis nemo, fuga
+                quas? Corrupti fugit sed eius deleniti nemo harum,
+                necessitatibus eum ipsam? Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Dolores eveniet sunt voluptatum
+                sequi odit dignissimos voluptas amet praesentium vero,
+                perspiciatis ut quam enim voluptates et quas nihil dolore
+                dolorum veniam?
+              </p>
+            </div>
+          </section>
+          <section class="class__section class__section--ranger">
+            <h4 class="t-header-4">Ranger</h4>
+            <img src="" alt="Ranger" class="class__img" />
+            <div class="class__description">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit non cumque sequi eos quidem aperiam quod quis nemo, fuga
+                quas? Corrupti fugit sed eius deleniti nemo harum,
+                necessitatibus eum ipsam? Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Dolores eveniet sunt voluptatum
+                sequi odit dignissimos voluptas amet praesentium vero,
+                perspiciatis ut quam enim voluptates et quas nihil dolore
+                dolorum veniam?
+              </p>
+            </div>
+          </section>
+          <section class="class__section class__section--rogue">
+            <h4 class="t-header-4">Rogue</h4>
+            <img src="" alt="Rogue" class="class__img" />
+            <div class="class__description">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit non cumque sequi eos quidem aperiam quod quis nemo, fuga
+                quas? Corrupti fugit sed eius deleniti nemo harum,
+                necessitatibus eum ipsam? Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Dolores eveniet sunt voluptatum
+                sequi odit dignissimos voluptas amet praesentium vero,
+                perspiciatis ut quam enim voluptates et quas nihil dolore
+                dolorum veniam?
+              </p>
+            </div>
+          </section>
+          <section class="class__section class__section--paladin">
+            <h4 class="t-header-4">Paladin</h4>
+            <img src="" alt="Paladin" class="class__img" />
+            <div class="class__description">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit non cumque sequi eos quidem aperiam quod quis nemo, fuga
+                quas? Corrupti fugit sed eius deleniti nemo harum,
+                necessitatibus eum ipsam? Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Dolores eveniet sunt voluptatum
+                sequi odit dignissimos voluptas amet praesentium vero,
+                perspiciatis ut quam enim voluptates et quas nihil dolore
+                dolorum veniam?
+              </p>
+            </div>
+          </section>
+          <section class="class__section class__section--shapeshifter">
+            <h4 class="t-header-4">Shapeshifter</h4>
+            <img src="" alt="Shapeshifter" class="class__img" />
+            <div class="class__description">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit non cumque sequi eos quidem aperiam quod quis nemo, fuga
+                quas? Corrupti fugit sed eius deleniti nemo harum,
+                necessitatibus eum ipsam? Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Dolores eveniet sunt voluptatum
+                sequi odit dignissimos voluptas amet praesentium vero,
+                perspiciatis ut quam enim voluptates et quas nihil dolore
+                dolorum veniam?
+              </p>
+            </div>
+          </section>
+        </section>
+
+        <section id="main">
+          <div class="features__main">
+            <h3 class="main__title t-header-3">Features</h3>
+            <p class="main__brief">
+              What this game offers differenly. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit, illo aperiam.
+            </p>
+          </div>
+          <section class="main__section main__section--npc">
+            <h4 class="t-header-4">Alive NPC</h4>
+            <img src="" alt="NPC" class="main__img" />
+            <p class="main__description">
+              New AI technology Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Amet sed ducimus voluptate cumque quo autem
+              excepturi aliquam aspernatur facilis. Eos alias cupiditate
+              consequatur magni eaque!
+            </p>
+          </section>
+          <section class="main__section main__section--npc">
+            <h4 class="t-header-4">Alive NPC</h4>
+            <img src="" alt="NPC" class="main__img" />
+            <p class="main__description">
+              New AI technology Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Amet sed ducimus voluptate cumque quo autem
+              excepturi aliquam aspernatur facilis. Eos alias cupiditate
+              consequatur magni eaque!
+            </p>
+          </section>
+          <section class="main__section main__section--npc">
+            <h4 class="t-header-4">Alive NPC</h4>
+            <img src="" alt="NPC" class="main__img" />
+            <p class="main__description">
+              New AI technology Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Amet sed ducimus voluptate cumque quo autem
+              excepturi aliquam aspernatur facilis. Eos alias cupiditate
+              consequatur magni eaque!
+            </p>
+          </section>
         </section>
       </section>
-      <section id="faction" class="faction">
-        <section class="faction__container">
-          <img src="" alt="Faction" class="faction__img" />
-          <div class="faction__description">
-            <p></p>
+
+      <section id="world" class="world">
+        <section id="race" class="race">
+          <div class="race__header">
+            <h3 class="t-header-3">Race</h3>
+            <p class="race__brief">
+              Each race has unique traits. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Veritatis sed commodi facilis
+              deleniti nam quod, corporis quae incidunt, quasi porro natus!
+            </p>
           </div>
+          <section class="race__section race__section--phinian">
+            <h4 class="t-header-4">Phinian</h4>
+            <img src="" alt="Phinian" class="race__img" />
+            <div class="race__description">
+              <p>
+                Phinians are a group of people that inhabit the vast grassland
+                in the west since thousands years ago. Debitis quae ab unde
+                consequatur qui tempore fugiat ut voluptates atque sed ex, sunt
+                quas ducimus error laborum, cupiditate voluptatem nobis placeat.
+              </p>
+            </div>
+          </section>
+          <section class="race__section race__section--vepian">
+            <h4 class="t-header-4">Vepian</h4>
+            <img src="" alt="Vepian" class="race__img" />
+            <div class="race__description">
+              <p>
+                Vepians born, fight, and die on the snowy land far in the north
+                since the dawn of history. They are battle hardend warriors with
+                resilience to cold. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Veniam odit magni odio? Corporis rem corrupti.
+              </p>
+            </div>
+          </section>
+          <section class="race__section race__section--muver">
+            <h4 class="t-header-4">Muver</h4>
+            <img src="" alt="Muver" class="race__img" />
+            <div class="race__description">
+              <p>
+                Muvers are hunters that lives on the massive mountain range in
+                the east. They live scattered in group of small clans. Their way
+                of life make them excel scout and ranger. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </section>
+          <section class="race__section race__section--yorguar">
+            <h4 class="t-header-4">Yorguar</h4>
+            <img src="" alt="Yorguar" class="race__img" />
+            <div class="race__description">
+              <p>
+                Yorguars are mystical people from southern desert where the
+                magic lines are the strongest. They doing magic and rituals so
+                often, their body able to hold more magic capacity. Lorem, ipsum
+                dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </section>
+        </section>
+
+        <section id="faction" class="faction">
+          <div class="faction__header">
+            <h3 class="t-header-3">Faction</h3>
+            <p class="faction__brief">
+              Join a faction and get unique benefits. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Illum adipisci tempore dolorem ea
+              eum eos vero repellendus! Accusantium voluptatem odio!
+            </p>
+          </div>
+          <section class="faction__section faction__section--courenth">
+            <h4 class="t-header-4">Courenth</h4>
+            <img src="" alt="Courenth" class="faction__img" />
+            <div class="faction__description">
+              <p>
+                Feudal Knights. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quaerat veniam voluptas saepe ducimus maxime
+                rerum, labore iure, ex ipsam, esse vitae odio earum alias
+                nesciunt architecto dolores ratione deleniti doloremque.
+              </p>
+            </div>
+          </section>
+          <section class="faction__section faction__section--thaivell">
+            <h4 class="t-header-4">Thaivell</h4>
+            <img src="" alt="Thaivell" class="faction__img" />
+            <div class="faction__description">
+              <p>
+                Technology Nerd. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Hic doloremque accusamus aliquid odio velit,
+                aliquam consequatur, quas consequuntur dolore sequi officia
+                voluptate qui iure, eligendi temporibus quae sed distinctio
+                mollitia?
+              </p>
+            </div>
+          </section>
+          <section class="faction__section faction__section--tukhodor">
+            <h4 class="t-header-4">Tukhodor</h4>
+            <img src="" alt="Tukhodor" class="faction__img" />
+            <div class="faction__description">
+              <p>
+                Paladin Order. Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Nostrum officia praesentium alias quos iure
+                dolores provident perferendis voluptatem optio amet quae saepe
+                assumenda maiores unde, repellat, cum cumque facere dignissimos.
+              </p>
+            </div>
+          </section>
+          <section class="faction__section faction__section--athaipharid">
+            <h4 class="t-header-4">Athaipharid</h4>
+            <img src="" alt="Athaipharid" class="faction__img" />
+            <div class="faction__description">
+              <p>
+                Magic addict. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Voluptatum excepturi nobis tenetur maxime error eveniet
+                sint est! Non harum earum labore sunt obcaecati perferendis, at
+                provident doloremque perspiciatis rem similique?
+              </p>
+            </div>
+          </section>
+          <section class="faction__section faction__section--khaellocuria">
+            <h4 class="t-header-4">Khaellocuria</h4>
+            <img src="" alt="Khaellocuria" class="faction__img" />
+            <div class="faction__description">
+              <p>
+                Religious fundamentalist paramilitary that thinks magic and
+                technology are heresy and killings are God's will. Lorem ipsum
+                dolor sit amet consectetur, adipisicing elit. Eius fuga facere
+                magnam id ullam corporis iure, veritatis sint.
+              </p>
+            </div>
+          </section>
         </section>
       </section>
-      <section id="religion" class="religion">
-        <section class="religion__container">
-          <img src="" alt="Religion" class="religion__img" />
-          <div class="religion__description">
-            <p></p>
-          </div>
-        </section>
-      </section>
-    </section>
+    </div>
 
     <section id="invitation">
       <p class="invitation__text"></p>
     </section>
 
-    <article id="news" class="news">
-      <article class="news__thumbnail">
-        <img src="" alt="" class="news__img" />
-        <p class="news__text"></p>
-      </article>
-    </article>
-
     <article id="media" class="media">
       <section class="media__video"></section>
       <section class="media__images"></section>
+    </article>
+
+    <article id="blog" class="blog">
+      <article class="blog__thumbnail">
+        <img src="" alt="" class="blog__img" />
+        <p class="blog__text"></p>
+      </article>
     </article>
 
     <footer class="footer">

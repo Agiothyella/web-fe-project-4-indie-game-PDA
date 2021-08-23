@@ -1,0 +1,155 @@
+.header {
+  &__logo {
+    z-index: 3;
+
+    img {
+      height: 300px;
+      width: auto;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__links {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 20px 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    row-gap: 4px;
+
+    img {
+      height: 60px;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      &:link,
+      &:visited {
+        color: $color-font-light;
+        text-shadow: 0 0 1px $color-dark;
+        font-size: 1.1rem;
+        font-family: $font-mulish;
+        text-decoration: none;
+
+        transition: all 0.1s;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-tertiary;
+      }
+    }
+
+    p {
+      color: $color-font-light;
+      font-size: 1.1rem;
+      font-family: $font-mulish;
+    }
+  }
+
+  &__copyright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 15px 10px;
+
+    font-family: $font-mulish;
+    font-size: 1.1rem;
+    color: $color-font-light;
+    text-shadow: 0 0 1px $color-dark;
+  }
+
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: 1rem;
+
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+
+    max-width: 70rem;
+    padding: 2rem 2rem 2rem 5rem;
+    color: $color-font-light;
+
+    background-image: url("../components/text-bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__title {
+    font-family: $font-forum;
+    text-shadow: 0 0 3px $color-primary, 0 0 10px $color-primary,
+      0 0 20px $color-primary;
+  }
+
+  &__text {
+    font-family: $font-bellefair;
+    font-size: 1.9rem;
+    text-shadow: 0 0 3px $color-primary, 0 0 5px $color-primary,
+      0 0 10px $color-primary, 0 0 20px $color-primary;
+  }
+
+  &__scroll {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    padding: 1.5rem 1rem;
+
+    cursor: pointer;
+    background-color: rgba($color-tertiary, 0.25);
+
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      transition: all 0.2s;
+
+      &:link,
+      &:visited {
+        color: $color-font-light;
+        font-family: $font-forum;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        text-shadow: 0 0 5px $color-dark, 0 0 5px $color-dark,
+          0 0 10px $color-dark;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-tertiary-light;
+        text-shadow: 0 0 10px $color-tertiary;
+      }
+    }
+
+    strong {
+      display: block;
+      margin-bottom: 0.5rem;
+
+      font-size: 1.5rem;
+    }
+  }
+
+  img {
+    pointer-events: none;
+    user-select: none;
+  }
+}
