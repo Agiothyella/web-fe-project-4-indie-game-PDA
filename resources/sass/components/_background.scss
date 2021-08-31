@@ -1,37 +1,24 @@
 .background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transform: translate3d(0, 0, 0);
+  transition: all 0.7s;
+
   &--1 {
-    background-image: linear-gradient(
-        to bottom right,
-        rgba($color-dark, 0.05),
-        rgba($color-dark, 0.05)
-      ),
-      url("../img/bg-1st.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    z-index: 1;
+    background-image: url("../img/bg-1st.jpg");
   }
 
   &--2 {
-    background-image: linear-gradient(
-        to bottom right,
-        rgba($color-dark, 0.05),
-        rgba($color-dark, 0.05)
-      ),
-      url("../img/bg-2nd.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    z-index: 2;
+    background-image: url("../img/bg-2nd.jpg");
   }
 
   &--3 {
-    background-image: linear-gradient(
-        to bottom right,
-        rgba($color-dark, 0.05),
-        rgba($color-dark, 0.05)
-      ),
-      url("../img/bg-3rd.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    z-index: 3;
+    background-image: url("../img/bg-3rd.jpg");
+    background-position: top;
   }
 }

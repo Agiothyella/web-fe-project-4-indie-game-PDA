@@ -1,0 +1,80 @@
+.invitation {
+  &__title {
+    color: $color-font-light;
+    font-family: $font-forum;
+    font-weight: 400;
+
+    text-shadow: 0 0 4px $color-dark;
+  }
+
+  &__text {
+    color: $color-font-light;
+    font-family: $font-bellefair;
+    font-size: 1.6rem;
+
+    text-shadow: 0 0 4px $color-dark;
+  }
+
+  &__button {
+    font-family: $font-forum;
+    font-size: 2rem;
+
+    margin: 5rem 0 1rem 0;
+
+    span {
+      display: inline-block;
+      padding: 1.5rem 4.5rem;
+    }
+
+    &:hover {
+      .btn__graphic--off {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 5rem;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+
+  &__item {
+    p {
+      color: $color-font-light;
+      font-family: $font-mulish;
+      font-size: 1.2rem;
+
+      text-shadow: 0 0 4px $color-dark;
+
+      &::before {
+        content: "\0232D";
+        display: inline-block;
+        margin-right: 0.8rem;
+      }
+    }
+  }
+
+  &__benefit {
+    &:link,
+    &:visited {
+      color: $color-tertiary-light;
+      text-transform: uppercase;
+      font-family: $font-bellefair;
+      font-size: 1.1rem;
+      text-shadow: 0 0 4px $color-dark;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-font-light;
+      background-color: rgba($color-dark, 0.4);
+      box-shadow: 0 0 10px rgba($color-dark, 0.4);
+    }
+  }
+}

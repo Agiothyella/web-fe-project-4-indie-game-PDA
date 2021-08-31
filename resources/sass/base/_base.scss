@@ -8,12 +8,12 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; //1 rem = 10px
-  scroll-behavior: smooth;
+  font-size: 62.5%;
+  scroll-behavior: auto;
 
-  // @media only screen and (max-width: 1200px) {
-  //   font-size: 50%; //1 rem = 8px
-  // }
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 56.25%;
+  }
 }
 
 body {
@@ -29,4 +29,5 @@ img {
 
 ::selection {
   color: $color-tertiary;
+  background-color: $color-primary;
 }

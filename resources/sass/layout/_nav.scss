@@ -3,6 +3,9 @@
   }
 
   &__body {
+    img {
+      z-index: 1;
+    }
   }
 }
 
@@ -14,7 +17,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 
     &--header {
       margin-top: 8px;
@@ -28,13 +31,26 @@
 
     &--subheader {
       margin-top: 8px;
-
       column-gap: 3rem;
+    }
+
+    &--body {
+      justify-content: space-between;
+
+      box-shadow: 0 5px 20px $color-dark;
+
+      background-image: url("../components/navbar-top.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
     }
   }
 
   &__item {
     transition: box-shadow 0.4s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
     &:not(:first-child) {
       &::before {
@@ -63,18 +79,39 @@
     &--header {
       &:not(:first-child) {
         &::before {
-          padding: 12px 0.25px;
+          padding: 1.8rem 0.26px;
         }
       }
 
       &:not(:last-child) {
         &::after {
-          padding: 12px 0.25px;
+          padding: 1.8rem 0.26px;
         }
       }
 
       &:hover {
-        box-shadow: inset 0px 0px 20px -6px rgba($color-tertiary, 0.6);
+        box-shadow: inset 0px 0px 20px -6px rgba($color-tertiary-saturate, 0.6);
+      }
+    }
+
+    &--body {
+      flex: 1;
+      text-align: center;
+
+      &:not(:first-child) {
+        &::before {
+          padding: 1.5rem 0.26px;
+        }
+      }
+
+      &:not(:last-child) {
+        &::after {
+          padding: 1.5rem 0.26px;
+        }
+      }
+
+      &:hover {
+        box-shadow: inset 0px 0px 20px -6px rgba($color-tertiary-saturate, 0.6);
       }
     }
   }
@@ -90,10 +127,6 @@
       transition: color 0.2s, text-shadow 0.2s;
     }
 
-    &:hover,
-    &:active {
-    }
-
     &--header {
       &:link,
       &:visited {
@@ -107,7 +140,7 @@
       &:hover,
       &:active {
         color: $color-tertiary-light;
-        text-shadow: 0 0 5px $color-light;
+        text-shadow: 0 0 6px $color-tertiary-saturate;
       }
     }
 
@@ -130,7 +163,25 @@
       &:hover,
       &:active {
         color: $color-tertiary-light;
-        text-shadow: 0 0 1px $color-quartenery;
+        text-shadow: 0 0 1px $color-light;
+      }
+    }
+
+    &--body {
+      &:link,
+      &:visited {
+        color: $color-font-light;
+        font-family: $font-cinzel;
+        font-size: 1.6rem;
+
+        width: 100%;
+        padding: 1.5rem 0;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-tertiary-light;
+        text-shadow: 0 0 6px $color-tertiary-saturate;
       }
     }
   }
@@ -156,9 +207,20 @@
   }
 }
 
-.nav__header__decoration {
-  z-index: 2 !important;
-  height: 35px !important;
-  width: auto !important;
-  transform: translate(-5px, 14px) !important;
+.nav {
+  &__header__decoration {
+    z-index: 2 !important;
+    height: 35px !important;
+    width: auto !important;
+    transform: translate(-5px, 14px) !important;
+  }
+
+  &__body__decoration {
+    z-index: 2 !important;
+    width: 60% !important;
+    height: auto !important;
+
+    left: 50%;
+    transform: translate(-50%, 2px) !important;
+  }
 }

@@ -3,7 +3,7 @@ $color-primary: #393e46;
 $color-secondary: #5c636e;
 $color-tertiary: #c0b95f;
 $color-tertiary-light: #e2dfb4;
-$color-quartenery: #f2f2f2;
+$color-tertiary-saturate: #eeeb29;
 
 $color-light: #fff;
 $color-gray-1: rgb(190, 190, 190);
@@ -27,6 +27,4 @@ $bp-medium: 53.125em; //850px
 $bp-small: 43.75em; //700px
 $bp-smallest: 37.5em; //600px
 
-$bp-service-break: 29.0625em; // 465px
-$bp-influence-workflow-break: 29.6875em; //475px
-$bp-contact-founder-break: 27.5em; // 440px
+$bp-break: 31.25em; //500px

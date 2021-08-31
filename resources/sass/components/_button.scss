@@ -1,0 +1,64 @@
+.btn {
+  display: inline-block;
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+    text-align: center;
+  }
+
+  &--background {
+    position: relative;
+
+    transition: all 0.2s;
+
+    &:link,
+    &:visited {
+      color: $color-tertiary;
+      text-transform: uppercase;
+      text-shadow: 0 0 3px $color-primary;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-font-light;
+      text-shadow: 0 0 3px $color-tertiary;
+    }
+  }
+
+  &__graphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+    transition: all 0.2s;
+    transform: translate3d(0, 0, 0);
+
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &--on {
+      background-image: url("../components/btn-hover.png");
+    }
+
+    &--off {
+      background-image: url("../components/btn-normal.png");
+    }
+  }
+
+  &--text {
+    &:link,
+    &:visited {
+      text-decoration: none;
+
+      border: 1px solid currentColor;
+      padding: 0.5rem 1rem;
+
+      transition: all 0.2s;
+    }
+  }
+}

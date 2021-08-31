@@ -1,0 +1,22 @@
+.a-fade-intro {
+  animation-name: a-fade-intro;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes a-fade-intro {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  33% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}

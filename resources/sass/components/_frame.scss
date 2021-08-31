@@ -1,6 +1,11 @@
 .frame {
   position: absolute;
 
+  img {
+    user-select: none;
+    pointer-events: none;
+  }
+
   &--top {
     top: 0;
     width: 100%;
