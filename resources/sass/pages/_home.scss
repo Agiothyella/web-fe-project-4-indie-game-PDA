@@ -45,32 +45,35 @@
   transform: translate3d(0, 0, 0);
   transition: all 0.7s;
 
+  @media only screen and (max-width: $bp-smallest) {
+    position: absolute;
+    width: 600px;
+  }
+
   &__wrapper {
     position: relative;
     max-width: 150rem;
     height: 100%;
+    width: 100%;
     margin: 0 auto;
   }
 }
 
 .nav {
   &__header {
-    width: max-content;
-    margin-left: 15%;
-    padding-top: 20px;
-
+    flex: 1 1;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-
-    @media only screen and (max-width: $bp-largest) {
-      margin-left: 10%;
-    }
+    align-items: center;
 
     @media only screen and (max-width: $bp-large) {
-      width: 95%;
-      margin-left: 0;
+      align-items: stretch;
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      flex: 1 0;
     }
   }
 

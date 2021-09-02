@@ -230,6 +230,10 @@
     height: 35px !important;
     width: auto !important;
     transform: translate(-5px, 14px) !important;
+
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
   }
 
   &__body__decoration {

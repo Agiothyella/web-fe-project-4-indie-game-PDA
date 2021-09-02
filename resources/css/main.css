@@ -1050,25 +1050,52 @@ img {
   font-size: 1.3rem;
 }
 
-.header__logo {
-  z-index: 3;
-}
-
-.header__logo img {
-  height: 30rem;
-  width: auto;
-}
-
 .header__nav {
+  width: max-content;
+  margin-left: 15%;
+  padding-top: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 75em) {
+  .header__nav {
+    margin-left: 10%;
+  }
 }
 
 @media only screen and (max-width: 62.5em) {
   .header__nav {
-    align-items: stretch;
+    width: 95%;
+    margin-left: 0;
+  }
+}
+
+.header__logo {
+  z-index: 3;
+  flex: 0 0;
+  height: 30rem;
+  width: auto;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .header__logo {
+    flex: 0 1 100%;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.header__logo img {
+  height: 100%;
+  width: auto;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .header__logo img {
+    height: auto;
     width: 100%;
   }
 }
@@ -1154,8 +1181,8 @@ img {
   .header__texts {
     right: 0;
     left: auto;
-    padding: 0 1rem 0 0;
-    width: 50%;
+    padding: 0 4rem 0 0;
+    width: 60%;
     transform: translate(0, -50%);
   }
 }
@@ -1631,6 +1658,12 @@ img {
   transform: translate(-5px, 14px) !important;
 }
 
+@media only screen and (max-width: 43.75em) {
+  .nav__header__decoration {
+    display: none;
+  }
+}
+
 .nav__body__decoration {
   z-index: 2 !important;
   width: 60% !important;
@@ -1901,33 +1934,39 @@ img {
   transition: all 0.7s;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .header {
+    position: absolute;
+    width: 600px;
+  }
+}
+
 .header__wrapper {
   position: relative;
   max-width: 150rem;
   height: 100%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .nav__header {
-  width: max-content;
-  margin-left: 15%;
-  padding-top: 20px;
+  flex: 1 1;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-}
-
-@media only screen and (max-width: 75em) {
-  .nav__header {
-    margin-left: 10%;
-  }
+  align-items: center;
 }
 
 @media only screen and (max-width: 62.5em) {
   .nav__header {
-    width: 95%;
-    margin-left: 0;
+    align-items: stretch;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  .nav__header {
+    flex: 1 0;
   }
 }
 
