@@ -1,19 +1,3 @@
-.a-fade-intro {
-  animation-name: a-fade-intro;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-out; }
-
-@keyframes a-fade-intro {
-  0% {
-    opacity: 0;
-    visibility: hidden; }
-  33% {
-    opacity: 0;
-    visibility: hidden; }
-  100% {
-    opacity: 1;
-    visibility: visible; } }
-
 *,
 *::before,
 *::after {
@@ -120,6 +104,12 @@ img {
 .u-invisible {
   opacity: 0 !important;
   visibility: hidden !important; }
+
+.u-transparent {
+  opacity: 0 !important; }
+
+.u-opaque {
+  opacity: 1 !important; }
 
 .header-fade {
   opacity: 0 !important;
@@ -1408,6 +1398,10 @@ img {
   .background--3 {
     opacity: 0;
     visibility: hidden; }
+  @media only screen and (max-width: 37.375em) {
+    .background {
+      height: 100%;
+      width: 100%; } }
 
 .header {
   z-index: 5;
@@ -1425,14 +1419,16 @@ img {
   @media only screen and (max-width: 37.375em) {
     .header {
       position: absolute;
-      width: 598px;
-      transition: none; } }
+      width: 598px; } }
   .header__wrapper {
     position: relative;
     max-width: 150rem;
     height: 100%;
     width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    transition: opacity 2s, visibility 2s; }
 
 .nav__header {
   flex: 1 1;
@@ -1454,7 +1450,11 @@ img {
   justify-self: center;
   width: 90%;
   padding-top: 15%;
-  margin-top: 35rem; }
+  margin-top: 35rem;
+  transform: translate3d(0, 0, 0);
+  opacity: 0;
+  visibility: visible;
+  transition: opacity 2s, visibility 2s; }
   @media only screen and (max-width: 50em) {
     .nav__body {
       width: 96%;
@@ -1480,7 +1480,11 @@ img {
   margin-top: 5rem;
   padding: 4rem 6rem;
   border: 1px solid #5c636e;
-  box-shadow: rgba(0, 0, 0, 0.8) 0px 25px 50px -12px, rgba(0, 0, 0, 0.8) 20px 20px 6px 0px inset, rgba(0, 0, 0, 0.8) -20px -20px 6px 1px inset; }
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 25px 50px -12px, rgba(0, 0, 0, 0.8) 20px 20px 6px 0px inset, rgba(0, 0, 0, 0.8) -20px -20px 6px 1px inset;
+  transform: translate3d(0, 0, 0);
+  opacity: 0;
+  visibility: visible;
+  transition: opacity 2s, visibility 2s; }
   .sections__wrapper::before {
     z-index: -1;
     content: "";

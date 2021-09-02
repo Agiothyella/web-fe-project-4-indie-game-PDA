@@ -58,6 +58,14 @@
   visibility: hidden !important;
 }
 
+.u-transparent {
+  opacity: 0 !important;
+}
+
+.u-opaque {
+  opacity: 1 !important;
+}
+
 .header-fade {
   opacity: 0 !important;
   visibility: hidden !important;

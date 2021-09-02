@@ -5,6 +5,8 @@ const header = document.querySelector(".header");
 const headerWrapper = document.querySelector(".header__wrapper");
 const htmlTag = document.documentElement;
 const bpVerySmall = window.matchMedia("(max-width: 37.5em)");
+const bodyNav = document.getElementById("body");
+const sectionsWrapper = document.querySelector(".sections__wrapper");
 
 function fadeHeader() {
   let top = window.pageYOffset || document.documentElement.scrollTop;
@@ -21,7 +23,18 @@ function fadeHeader() {
   }
 }
 
-fadeHeader();
+function fadeIn() {
+  headerWrapper.classList.add("u-opaque");
+  bodyNav.classList.add("u-visible");
+  sectionsWrapper.classList.add("u-visible");
+}
+
+function initPage() {
+  fadeHeader();
+  fadeIn();
+}
+
+window.addEventListener("load", initPage());
 window.onscroll = function () {
   setTimeout(fadeHeader, 50);
 };
