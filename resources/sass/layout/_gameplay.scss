@@ -57,8 +57,13 @@
   }
 
   &__title {
-    border-bottom: 1px solid $color-light;
-    width: 40%;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      border-bottom: 1px solid $color-light;
+      width: 40%;
+      text-align: left;
+    }
   }
 
   &__description {

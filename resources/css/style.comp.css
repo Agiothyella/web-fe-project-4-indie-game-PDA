@@ -520,8 +520,12 @@ img {
       margin-bottom: 0; } }
 
 .main__title {
-  border-bottom: 1px solid #fff;
-  width: 40%; }
+  text-align: center; }
+  @media only screen and (max-width: 50em) {
+    .main__title {
+      border-bottom: 1px solid #fff;
+      width: 40%;
+      text-align: left; } }
 
 .main__description {
   color: #bebebe;
