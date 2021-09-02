@@ -1085,6 +1085,10 @@ img {
     flex: 0 1 100%;
     width: 100%;
     height: auto;
+    background-image: url("../img/Logo-small.png");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
   }
 }
 
@@ -1097,6 +1101,8 @@ img {
   .header__logo img {
     height: auto;
     width: 100%;
+    opacity: 0;
+    visibility: none;
   }
 }
 

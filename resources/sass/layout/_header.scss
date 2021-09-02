@@ -30,6 +30,11 @@
 
       width: 100%;
       height: auto;
+
+      background-image: url("../img/Logo-small.png");
+      background-size: cover;
+      background-position: right;
+      background-repeat: no-repeat;
     }
 
     img {
@@ -39,6 +44,9 @@
       @media only screen and (max-width: $bp-small) {
         height: auto;
         width: 100%;
+
+        opacity: 0;
+        visibility: none;
       }
     }
   }
