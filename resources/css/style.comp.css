@@ -1454,7 +1454,9 @@ img {
   justify-self: center;
   width: 90%;
   padding-top: 15%;
-  margin-top: 35rem; }
+  margin-top: 35rem;
+  opacity: 0;
+  visibility: hidden; }
   @media only screen and (max-width: 50em) {
     .nav__body {
       width: 96%;
@@ -1480,7 +1482,9 @@ img {
   margin-top: 5rem;
   padding: 4rem 6rem;
   border: 1px solid #5c636e;
-  box-shadow: rgba(0, 0, 0, 0.8) 0px 25px 50px -12px, rgba(0, 0, 0, 0.8) 20px 20px 6px 0px inset, rgba(0, 0, 0, 0.8) -20px -20px 6px 1px inset; }
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 25px 50px -12px, rgba(0, 0, 0, 0.8) 20px 20px 6px 0px inset, rgba(0, 0, 0, 0.8) -20px -20px 6px 1px inset;
+  opacity: 0;
+  visibility: hidden; }
   .sections__wrapper::before {
     z-index: -1;
     content: "";
