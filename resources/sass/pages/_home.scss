@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns:
     [full-start]1fr
-    [center-start] minmax(600px, 110rem)
+    [center-start] minmax(598px, 110rem)
     [center-end]
     1fr
     [full-end];
@@ -47,7 +47,8 @@
 
   @media only screen and (max-width: $bp-smallest) {
     position: absolute;
-    width: 600px;
+    width: 598px;
+    transition: none;
   }
 
   &__wrapper {
@@ -88,6 +89,11 @@
 
     @media only screen and (max-width: $bp-medium) {
       width: 96%;
+      padding-top: 21%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-top: 10rem;
     }
   }
 }
@@ -346,10 +352,6 @@
       grid-template-columns: 1fr max-content;
       padding-bottom: 2rem;
       justify-items: start;
-    }
-
-    @media only screen and (max-width: $bp-small) {
-      justify-items: center;
     }
   }
 }

@@ -1,17 +1,22 @@
-`use strict`;
+// `use strict`;
 
 // TOP FADE //----------------------------------
 const header = document.querySelector(".header");
 const headerWrapper = document.querySelector(".header__wrapper");
 const htmlTag = document.documentElement;
+const bpVerySmall = window.matchMedia("(max-width: 37.5em)");
 
 function fadeHeader() {
   let top = window.pageYOffset || document.documentElement.scrollTop;
-  if (top > 5) {
-    header.classList.add("u-invisible");
+  if (top > 0) {
+    header.classList.add("header-fade");
     htmlTag.style = "scroll-behavior: smooth";
+
+    if (media.matches) {
+      header.style;
+    }
   } else {
-    header.classList.remove("u-invisible");
+    header.classList.remove("header-fade");
     htmlTag.style = "scroll-behavior: auto";
   }
 }
