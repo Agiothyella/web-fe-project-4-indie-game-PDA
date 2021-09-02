@@ -41,6 +41,29 @@ const mediaVideo = new Splide(".media__show--video", {
   video: {
     mute: true,
   },
+
+  breakpoints: {
+    1200: {
+      width: "95%",
+    },
+
+    1000: {
+      width: "100%",
+      padding: {
+        right: "10rem",
+        left: "10rem",
+      },
+    },
+
+    800: {
+      width: "100%",
+      gap: "2rem",
+      padding: {
+        right: "5rem",
+        left: "5rem",
+      },
+    },
+  },
 }).mount(window.splide.Extensions);
 
 const mediaImage = new Splide(".media__show--images", {
@@ -61,7 +84,41 @@ const mediaImage = new Splide(".media__show--images", {
   video: {
     mute: true,
   },
-}).mount(window.splide.Extensions);
+
+  breakpoints: {
+    1200: {
+      width: "100%",
+    },
+
+    1000: {
+      width: "100%",
+      gap: "3rem",
+      padding: {
+        right: "8rem",
+        left: "8rem",
+      },
+    },
+
+    800: {
+      width: "100%",
+      gap: "2rem",
+      padding: {
+        right: "5rem",
+        left: "5rem",
+      },
+    },
+
+    700: {
+      width: "100%",
+      gap: "2rem",
+      perPage: 1,
+      padding: {
+        right: "5rem",
+        left: "5rem",
+      },
+    },
+  },
+}).mount();
 //-----------------------------------------------
 
 // WAYPOINT JS //----------------------------------

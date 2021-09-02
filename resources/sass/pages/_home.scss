@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns:
     [full-start]1fr
-    [center-start] minmax(min-content, 110rem)
+    [center-start] minmax(600px, 110rem)
     [center-end]
     1fr
     [full-end];
@@ -55,6 +55,7 @@
 
 .nav {
   &__header {
+    width: max-content;
     margin-left: 15%;
     padding-top: 20px;
 
@@ -62,6 +63,15 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+
+    @media only screen and (max-width: $bp-largest) {
+      margin-left: 10%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      width: 95%;
+      margin-left: 0;
+    }
   }
 
   &__body {
@@ -72,6 +82,10 @@
     width: 90%;
     padding-top: 15%;
     margin-top: 35rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 96%;
+    }
   }
 }
 
@@ -112,6 +126,10 @@
     background-image: url("../components/texture.jpg");
     opacity: 0.95;
   }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 3rem 4rem;
+  }
 }
 
 .introduction {
@@ -121,6 +139,7 @@
   box-shadow: rgba($color-dark, 0.3) 0px 1px 2px 0px,
     rgba($color-dark, 0.15) 0px 2px 6px 2px;
 
+  position: relative;
   width: 100%;
   padding: 1rem;
   margin-bottom: 10rem;
@@ -129,6 +148,36 @@
   grid-template-columns: 65% 1fr;
   column-gap: 4rem;
   row-gap: 2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(0, min-content));
+    align-items: center;
+
+    padding: 1.5rem;
+  }
+
+  &:after {
+    content: "";
+
+    @media only screen and (max-width: $bp-medium) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 99%;
+      height: 97.5%;
+
+      opacity: 0.8;
+      filter: brightness(0.25);
+
+      background-image: url("../img/intro.jpg");
+      background-position: 50% 30%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .gameplay {
@@ -140,6 +189,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5rem;
+
+    @media only screen and (max-width: $bp-large) {
+      column-gap: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      row-gap: 2rem;
+    }
   }
 
   &__features {
@@ -194,6 +253,10 @@
   background-image: url("../components/text-bg.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 25rem 0 5rem 0;
+  }
 }
 
 .media {
@@ -237,6 +300,10 @@
   border: 1px solid $color-secondary;
   background-color: rgba($color-secondary, 0.1);
 
+  @media only screen and (max-width: $bp-medium) {
+    padding: 6rem 5rem 4rem 5rem;
+  }
+
   &::before {
     z-index: -1;
     content: "";
@@ -268,9 +335,19 @@
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: max-content 1fr repeat(2, max-content);
+    grid-template-columns: max-content repeat(2, 1fr) max-content;
     justify-items: center;
     align-items: center;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-template-columns: 1fr max-content;
+      padding-bottom: 2rem;
+      justify-items: start;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      justify-items: center;
+    }
   }
 }
 
@@ -286,19 +363,7 @@
   }
 
   &__title {
-    font-family: $font-forum;
-    font-weight: 400;
     margin-bottom: 0.5rem;
-  }
-
-  &__brief {
-    font-family: $font-bellefair;
-    font-size: 1.6rem;
-  }
-
-  &__subtitle {
-    font-family: $font-forum;
-    font-weight: 400;
   }
 }
 
@@ -316,11 +381,19 @@
       height: 140px;
       width: 55%;
       top: 0;
+
+      @media only screen and (max-width: $bp-small) {
+        width: 80%;
+      }
     }
 
     &--bottom {
       width: 60%;
       bottom: 0;
+
+      @media only screen and (max-width: $bp-small) {
+        width: 85%;
+      }
     }
   }
 
@@ -338,6 +411,10 @@
 
     &--bottom {
       bottom: 0;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      display: none;
     }
   }
 

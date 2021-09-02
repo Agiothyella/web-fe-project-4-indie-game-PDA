@@ -35,8 +35,6 @@
     }
 
     &--body {
-      justify-content: space-between;
-
       box-shadow: 0 5px 20px $color-dark;
 
       background-image: url("../components/navbar-top.jpg");
@@ -77,6 +75,9 @@
     }
 
     &--header {
+      flex: 1 1;
+      text-align: center;
+
       &:not(:first-child) {
         &::before {
           padding: 1.8rem 0.26px;
@@ -89,7 +90,9 @@
         }
       }
 
-      &:hover {
+      &:hover,
+      &:active,
+      &:focus {
         box-shadow: inset 0px 0px 20px -6px rgba($color-tertiary-saturate, 0.6);
       }
     }
@@ -110,7 +113,9 @@
         }
       }
 
-      &:hover {
+      &:hover,
+      &:active,
+      &:focus {
         box-shadow: inset 0px 0px 20px -6px rgba($color-tertiary-saturate, 0.6);
       }
     }
@@ -134,11 +139,17 @@
         font-family: $font-cinzel;
         font-size: 1.6rem;
 
+        width: 100%;
         padding: 1.5rem 4rem;
+
+        @media only screen and (max-width: $bp-large) {
+          padding: 1.5rem 0;
+        }
       }
 
       &:hover,
-      &:active {
+      &:active,
+      &:focus {
         color: $color-tertiary-light;
         text-shadow: 0 0 6px $color-tertiary-saturate;
       }
@@ -161,7 +172,8 @@
       }
 
       &:hover,
-      &:active {
+      &:active,
+      &:focus {
         color: $color-tertiary-light;
         text-shadow: 0 0 1px $color-light;
       }
@@ -176,10 +188,15 @@
 
         width: 100%;
         padding: 1.5rem 0;
+
+        @media only screen and (max-width: $bp-small) {
+          font-size: 1.3rem;
+        }
       }
 
       &:hover,
-      &:active {
+      &:active,
+      &:focus {
         color: $color-tertiary-light;
         text-shadow: 0 0 6px $color-tertiary-saturate;
       }
@@ -222,5 +239,9 @@
 
     left: 50%;
     transform: translate(-50%, 2px) !important;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 80% !important;
+    }
   }
 }

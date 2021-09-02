@@ -15,3 +15,20 @@
 .t-header-4 {
   font-size: 2rem;
 }
+
+.subsection {
+  &__title {
+    font-family: $font-forum;
+    font-weight: 400;
+  }
+
+  &__brief {
+    font-family: $font-bellefair;
+    font-size: 1.6rem;
+  }
+
+  &__subtitle {
+    font-family: $font-forum;
+    font-weight: 400;
+  }
+}

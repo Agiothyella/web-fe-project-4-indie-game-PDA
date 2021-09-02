@@ -11,6 +11,16 @@
     &:not(:last-child) {
       border-bottom: 1px solid $color-secondary;
     }
+
+    @media only screen and (max-width: $bp-large) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: max-content minmax(0, 1fr) max-content;
+      column-gap: 3rem;
+    }
   }
 
   &__title {
@@ -18,6 +28,16 @@
 
     width: 30%;
     border-bottom: 1px solid $color-font-light;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: auto / span 2;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / span 3;
+
+      border-bottom: none;
+    }
   }
 
   &__img {
@@ -32,6 +52,17 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 3 / span 1;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: auto / span 2;
+      grid-row: auto / span 3;
+
+      align-self: start;
+    }
   }
 
   &__description {
@@ -46,12 +77,32 @@
     font-size: 1.1rem;
     line-height: 1.6;
     color: $color-font-light;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: auto / span 2;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: auto / span 3;
+
+      margin: 2rem 0;
+    }
   }
 
   &__skill {
     grid-column: auto / span 3;
     justify-self: end;
     color: $color-font-grey;
+    border-top: 1px solid $color-secondary;
+    padding: 1.5rem 0;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: auto / span 2;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: auto / span 3;
+    }
 
     ul {
       list-style: none;
@@ -79,7 +130,7 @@
 .faction {
   &__section {
     display: grid;
-    grid-template-columns: repeat (4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     column-gap: 5rem;
 
@@ -87,10 +138,14 @@
     box-shadow: rgba($color-dark, 0.3) 0px 1px 2px 0px,
       rgba($color-dark, 0.15) 0px 2px 6px 2px;
     background-color: rgba($color-secondary, 0.3);
+
+    @media only screen and (max-width: $bp-large) {
+      column-gap: 2rem;
+    }
   }
 
   &__title {
-    grid-column: 2 / span 3;
+    grid-column: 2 / span 2;
     grid-row: 1 / span 1;
 
     width: 30%;
@@ -100,10 +155,19 @@
   &__img {
     grid-column: 1 / span 1;
     grid-row: 1 / span 3;
+
+    @media only screen and (max-width: $bp-small) {
+      align-self: start;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__description {
-    grid-column: 2 / span 3;
+    grid-column: 2 / span 2;
     grid-row: 2 / span 1;
     align-self: start;
 
@@ -118,9 +182,12 @@
   }
 
   &__special {
-    grid-column: 2 / span 3;
+    grid-column: 2 / span 2;
     grid-row: 3 / span 1;
     justify-self: start;
+
+    padding-top: 1.5rem;
+    border-top: 1px solid $color-secondary;
 
     color: $color-font-grey;
 
@@ -129,7 +196,11 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 3rem;
-      row-gap: 0.5rem;
+      row-gap: 1rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: 1fr;
+      }
     }
 
     li {

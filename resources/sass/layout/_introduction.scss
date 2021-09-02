@@ -5,6 +5,11 @@
 
     font-family: $font-forum;
     font-weight: 400;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-row: 1 / span 1;
+      z-index: 1;
+    }
   }
 
   &__text {
@@ -16,6 +21,13 @@
     font-size: 1.4rem;
     text-align: justify;
     line-height: 2.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-row: 2 / span 1;
+      z-index: 1;
+
+      padding: 0 2rem;
+    }
   }
 
   &__link {
@@ -35,6 +47,14 @@
     &:active {
       color: $color-font-light;
     }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / span 1;
+      grid-row: 3 / span 1;
+      z-index: 1;
+
+      margin: 0 2rem 2rem 0;
+    }
   }
 
   &__image {
@@ -45,12 +65,16 @@
     border: 1px solid $color-primary;
     box-shadow: rgba($color-dark, 0.4) 0px 3px 8px;
 
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+
     &__main {
       width: 100%;
       height: 100%;
 
       object-fit: cover;
-      object-position: right;
+      object-position: top right;
     }
 
     &__border {
@@ -62,6 +86,7 @@
       left: 0;
       opacity: 0.6;
 
+      object-fit: fill;
       pointer-events: none;
       user-select: none;
     }

@@ -68,6 +68,11 @@
       font-family: $font-bellefair;
       font-size: 1.1rem;
       text-shadow: 0 0 4px $color-dark;
+
+      @media only screen and (hover: none) {
+        color: $color-font-light;
+        background-color: rgba($color-dark, 0.3);
+      }
     }
 
     &:hover,

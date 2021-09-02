@@ -3,6 +3,10 @@
     &--video {
       padding: 3rem 8rem;
 
+      @media only screen and (max-width: $bp-medium) {
+        padding: 3rem 4.5rem;
+      }
+
       li {
         border: 1px solid $color-secondary;
       }
@@ -10,6 +14,10 @@
 
     &--images {
       padding: 3rem 6rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        padding: 3rem 4.5rem;
+      }
 
       li {
         border: 1px solid $color-secondary;
