@@ -14,3 +14,5 @@ Resources used that I didn't create:
 - Images: Seok Min Eo (Background top), Jennie Goggin (Background 1), For Honor (Background 2), Conor Burke (Background 3), Nial Hanson (Introduction), Skyrim (Races), hofarts (Faction Crests), goldendaniel (Faction Crests), Crytek (Arts), Crytek (Classes)
 - Icons: smashicons, freepik, eucalypt, surag
 - Visual component: lyotta (Border horizontal), atanichi (Button graphic), mrzielsko (Navbar)
+
+No copyright infringement is intended. I do not own nor claim any of the game name and/or idea and images used in this webpage, as it only served as placeholder. If you're creator of one of the images I use as placeholder on this webpage and wish it to be removed, just email me and i'll remove it immediately.
