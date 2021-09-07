@@ -97,8 +97,8 @@
 
     transform: translate3d(0, 0, 0);
     opacity: 0;
-    visibility: visible;
-    transition: opacity 2s, visibility 2s;
+    visibility: hidden;
+    transition: opacity 1s, visibility 1s;
 
     @media only screen and (max-width: $bp-medium) {
       width: 96%;
@@ -138,8 +138,8 @@
 
   transform: translate3d(0, 0, 0);
   opacity: 0;
-  visibility: visible;
-  transition: opacity 2s, visibility 2s;
+  visibility: hidden;
+  transition: opacity 1s, visibility 1s;
 
   &::before {
     z-index: -1;

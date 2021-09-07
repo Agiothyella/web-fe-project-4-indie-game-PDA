@@ -2005,8 +2005,8 @@ img {
   margin-top: 35rem;
   transform: translate3d(0, 0, 0);
   opacity: 0;
-  visibility: visible;
-  transition: opacity 2s, visibility 2s;
+  visibility: hidden;
+  transition: opacity 1s, visibility 1s;
 }
 
 @media only screen and (max-width: 50em) {
@@ -2045,8 +2045,8 @@ img {
   box-shadow: rgba(0, 0, 0, 0.8) 0px 25px 50px -12px, rgba(0, 0, 0, 0.8) 20px 20px 6px 0px inset, rgba(0, 0, 0, 0.8) -20px -20px 6px 1px inset;
   transform: translate3d(0, 0, 0);
   opacity: 0;
-  visibility: visible;
-  transition: opacity 2s, visibility 2s;
+  visibility: hidden;
+  transition: opacity 1s, visibility 1s;
 }
 
 .sections__wrapper::before {
