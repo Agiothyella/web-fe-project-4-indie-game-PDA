@@ -61,7 +61,7 @@ function initPage() {
   fadeIn();
 }
 
-window.addEventListener("load", initPage());
+window.addEventListener("load", initPage);
 window.onscroll = function () {
   setTimeout(fadeHeader, 50);
 };
