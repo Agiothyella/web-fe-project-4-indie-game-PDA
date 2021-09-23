@@ -20,7 +20,6 @@
     align-items: center;
 
     &--header {
-      margin-top: 8px;
       box-shadow: 0 5px 20px $color-primary;
 
       background-image: url("../components/navbar-top.jpg");
@@ -225,15 +224,16 @@
 }
 
 .nav {
-  &__header__decoration {
-    z-index: 2 !important;
-    height: 35px !important;
-    width: auto !important;
-    transform: translate(-5px, 14px) !important;
+  &__body__container {
+    position: relative;
+  }
 
-    @media only screen and (max-width: $bp-small) {
-      display: none;
-    }
+  &__body__graphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
   }
 
   &__body__decoration {
@@ -246,6 +246,30 @@
 
     @media only screen and (max-width: $bp-small) {
       width: 80% !important;
+    }
+  }
+
+  &__header__container {
+    position: relative;
+    transform: translateY(8px);
+  }
+
+  &__header__graphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__header__decoration {
+    z-index: 2 !important;
+    height: 35px !important;
+    width: auto !important;
+    transform: translate(-5px, 14px) !important;
+
+    @media only screen and (max-width: $bp-small) {
+      display: none;
     }
   }
 }

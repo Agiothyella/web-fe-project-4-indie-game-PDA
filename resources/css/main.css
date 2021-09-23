@@ -255,6 +255,7 @@ img {
 .frame--top {
   top: 0;
   width: 100%;
+  height: 0;
 }
 
 .frame--top img {
@@ -280,6 +281,7 @@ img {
 .frame--bottom {
   bottom: 0;
   width: 100%;
+  height: 0;
 }
 
 .frame--bottom img {
@@ -1524,7 +1526,6 @@ img {
 }
 
 .nav__list--header {
-  margin-top: 8px;
   box-shadow: 0 5px 20px #393e46;
   background-image: url("../components/navbar-top.jpg");
   background-position: center;
@@ -1669,17 +1670,16 @@ img {
   height: 145%;
 }
 
-.nav__header__decoration {
-  z-index: 2 !important;
-  height: 35px !important;
-  width: auto !important;
-  transform: translate(-5px, 14px) !important;
+.nav__body__container {
+  position: relative;
 }
 
-@media only screen and (max-width: 43.75em) {
-  .nav__header__decoration {
-    display: none;
-  }
+.nav__body__graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .nav__body__decoration {
@@ -1693,6 +1693,32 @@ img {
 @media only screen and (max-width: 43.75em) {
   .nav__body__decoration {
     width: 80% !important;
+  }
+}
+
+.nav__header__container {
+  position: relative;
+  transform: translateY(8px);
+}
+
+.nav__header__graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.nav__header__decoration {
+  z-index: 2 !important;
+  height: 35px !important;
+  width: auto !important;
+  transform: translate(-5px, 14px) !important;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .nav__header__decoration {
+    display: none;
   }
 }
 
