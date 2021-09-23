@@ -1133,6 +1133,18 @@ img {
   .nav__list--subheader {
     margin-top: 8px;
     column-gap: 3rem; }
+    @media only screen and (max-width: 62.5em) {
+      .nav__list--subheader {
+        column-gap: 1.5rem;
+        margin: 8px 0.75rem 0 0.75rem; } }
+    @media only screen and (max-width: 43.75em) {
+      .nav__list--subheader {
+        column-gap: 2.2rem;
+        margin: 8px 3rem 0 3rem; } }
+    @media only screen and (max-width: 39.375em) {
+      .nav__list--subheader {
+        column-gap: 1rem;
+        margin: 8px 3rem 0 3rem; } }
   .nav__list--body {
     box-shadow: 0 5px 20px #000;
     background-image: url("../components/navbar-top.jpg");
@@ -1184,7 +1196,11 @@ img {
   padding: 1.5rem 4rem; }
   @media only screen and (max-width: 62.5em) {
     .nav__link--header:link, .nav__link--header:visited {
-      padding: 1.5rem 0; } }
+      padding: 1.5rem 0;
+      font-size: 1.5rem; } }
+  @media only screen and (max-width: 43.75em) {
+    .nav__link--header:link, .nav__link--header:visited {
+      font-size: 1.3rem; } }
 
 .nav__link--header:hover, .nav__link--header:active, .nav__link--header:focus {
   color: #e2dfb4;
@@ -1247,7 +1263,7 @@ img {
 
 .nav__header__container {
   position: relative;
-  transform: translateY(8px); }
+  margin-top: 8px; }
 
 .nav__header__graphic {
   position: absolute;

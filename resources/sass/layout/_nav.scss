@@ -31,6 +31,21 @@
     &--subheader {
       margin-top: 8px;
       column-gap: 3rem;
+
+      @media only screen and (max-width: $bp-large) {
+        column-gap: 1.5rem;
+        margin: 8px 0.75rem 0 0.75rem;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+        column-gap: 2.2rem;
+        margin: 8px 3rem 0 3rem;
+      }
+
+      @media only screen and (max-width: $bp-logo-break) {
+        column-gap: 1rem;
+        margin: 8px 3rem 0 3rem;
+      }
     }
 
     &--body {
@@ -143,6 +158,11 @@
 
         @media only screen and (max-width: $bp-large) {
           padding: 1.5rem 0;
+          font-size: 1.5rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+          font-size: 1.3rem;
         }
       }
 
@@ -251,7 +271,7 @@
 
   &__header__container {
     position: relative;
-    transform: translateY(8px);
+    margin-top: 8px;
   }
 
   &__header__graphic {
