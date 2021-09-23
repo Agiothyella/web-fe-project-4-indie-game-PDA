@@ -219,6 +219,14 @@ img {
       top: 50%;
       transform: translate(75%, -50%);
       height: 100%; }
+  .frame--border {
+    top: 0;
+    width: 100%; }
+    .frame--border img {
+      position: absolute;
+      bottom: 0;
+      transform: translateY(50%);
+      width: 100%; }
 
 .splide__arrow {
   position: absolute;

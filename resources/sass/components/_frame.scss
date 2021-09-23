@@ -57,4 +57,16 @@
       height: 100%;
     }
   }
+
+  &--border {
+    top: 0;
+    width: 100%;
+
+    img {
+      position: absolute;
+      bottom: 0;
+      transform: translateY(50%);
+      width: 100%;
+    }
+  }
 }
