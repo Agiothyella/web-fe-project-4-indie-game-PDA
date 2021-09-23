@@ -76,7 +76,7 @@
     @media only screen and (max-width: $bp-medium) {
       margin: 1rem 0;
 
-      text-align: justify;
+      text-align: left;
     }
   }
 }
@@ -150,11 +150,11 @@
 
     margin: 2rem 0 2.5rem 0;
 
-    text-align: justify;
+    text-align: left;
     color: $color-font-light;
 
     font-family: $font-mulish;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     color: $color-font-light;
   }
@@ -164,7 +164,7 @@
     grid-row: 3 / span 1;
 
     font-family: $font-bellefair;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: $color-font-grey;
   }
 }
@@ -301,11 +301,11 @@
 
     margin: 3rem 2rem 2rem 2rem;
 
-    text-align: justify;
+    text-align: left;
     color: $color-font-light;
 
     font-family: $font-mulish;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
 
     @media only screen and (max-width: $bp-large) {
@@ -415,7 +415,7 @@
 
     p {
       font-family: $font-bellefair;
-      font-size: 1.3rem;
+      font-size: 1.35rem;
     }
   }
 }
