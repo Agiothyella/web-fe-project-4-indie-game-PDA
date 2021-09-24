@@ -940,8 +940,8 @@ img {
   grid-column: 1 / span 1;
   padding: 0 0 0 2rem;
   width: 100%;
-  font-family: "Bellefair", serif;
-  font-size: 1.5rem;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.2rem;
   text-align: left;
   line-height: 2rem; }
   @media only screen and (max-width: 50em) {
@@ -1606,7 +1606,7 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   padding: 3rem 2rem;
-  background-color: rgba(92, 99, 110, 0.1); }
+  background-color: rgba(92, 99, 110, 0.15); }
 
 .gameplay__class {
   display: grid;
@@ -1621,7 +1621,7 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   padding: 3rem 2rem;
-  background-color: rgba(92, 99, 110, 0.1); }
+  background-color: rgba(92, 99, 110, 0.15); }
 
 .world__faction {
   display: grid;

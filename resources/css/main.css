@@ -304,6 +304,18 @@ img {
   height: 100%;
 }
 
+.frame--border {
+  top: 0;
+  width: 100%;
+}
+
+.frame--border img {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  width: 100%;
+}
+
 .splide__arrow {
   position: absolute;
   z-index: 1;
@@ -1280,8 +1292,8 @@ img {
   grid-column: 1 / span 1;
   padding: 0 0 0 2rem;
   width: 100%;
-  font-family: "Bellefair", serif;
-  font-size: 1.5rem;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.2rem;
   text-align: left;
   line-height: 2rem;
 }
@@ -1538,6 +1550,27 @@ img {
   column-gap: 3rem;
 }
 
+@media only screen and (max-width: 62.5em) {
+  .nav__list--subheader {
+    column-gap: 1.5rem;
+    margin: 8px 0.75rem 0 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  .nav__list--subheader {
+    column-gap: 2.2rem;
+    margin: 8px 3rem 0 3rem;
+  }
+}
+
+@media only screen and (max-width: 39.375em) {
+  .nav__list--subheader {
+    column-gap: 1rem;
+    margin: 8px 3rem 0 3rem;
+  }
+}
+
 .nav__list--body {
   box-shadow: 0 5px 20px #000;
   background-image: url("../components/navbar-top.jpg");
@@ -1615,6 +1648,13 @@ img {
 @media only screen and (max-width: 62.5em) {
   .nav__link--header:link, .nav__link--header:visited {
     padding: 1.5rem 0;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  .nav__link--header:link, .nav__link--header:visited {
+    font-size: 1.3rem;
   }
 }
 
@@ -1698,7 +1738,7 @@ img {
 
 .nav__header__container {
   position: relative;
-  transform: translateY(8px);
+  margin-top: 8px;
 }
 
 .nav__header__graphic {
@@ -2167,7 +2207,7 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   padding: 3rem 2rem;
-  background-color: rgba(92, 99, 110, 0.1);
+  background-color: rgba(92, 99, 110, 0.15);
 }
 
 .gameplay__class {
@@ -2185,7 +2225,7 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   padding: 3rem 2rem;
-  background-color: rgba(92, 99, 110, 0.1);
+  background-color: rgba(92, 99, 110, 0.15);
 }
 
 .world__faction {
