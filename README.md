@@ -1,5 +1,5 @@
 # Agiothyella Indie Game
-Main page for Agiothyella Indie MMORPG Game
+Main page for Agiothyella's Kickstarter Indie RPG Game
 
 Demo: https://agiothyella.github.io/web-fe-project-4-indie-game-PDA/
 
