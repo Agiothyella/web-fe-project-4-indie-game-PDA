@@ -19,8 +19,14 @@ No copyright infringement is intended. I do not own nor claim any of the game na
 
 # Journal:
 
+### Design:
 This one is created based on graphical webpage with lots of assets. The hardest part was to find assets that's looks good and fit in with the theme, to the point where I had to make some myself because there's limited assets available with so many considerations to limit it further (free to use, fit the theme, looks good together, etc.).
 
 In the end, I think I had achieve what I had in mind. It looks adventurous, inviting, easy to skim, and it blended well with medieval aestetic. While the content gives (maybe) more info than necessary, it's because I don't know what else to fill the sections with. Each game has it's own points to present, and this example webpage use non-existent game, so I decided to stick to what makes RPG games stand out, which is world-building.
 
 There's a lot of assets on this webpage, but even though almost all of it was taken from different sources, I think it blended well to create one inviting webpage that sparks interest to make the visitor backing the game kickstarter.
+
+### Development:
+Another webpage with lots of resources that can be fasten by using lazy load. But what I did was to wait for the page to load before showing it to the user. It fit the aestetic of 'game' to load like that, but it could be better. There's also a bit of problems with structure of images used as graphic components. Should have use pseudo-elements to make the code cleaner.
+
+Some of the resources was made by myself to compensate the lack of quality of free graphic components, but some that I made myself still came out as not-that-good. At least it fits the theme better.
