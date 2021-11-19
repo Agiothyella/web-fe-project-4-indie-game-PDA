@@ -7,6 +7,9 @@ const htmlTag = document.documentElement;
 const bpVerySmall = window.matchMedia("(max-width: 37.5em)");
 const bodyNav = document.getElementById("body");
 const sectionsWrapper = document.querySelector(".sections__wrapper");
+const sectionInvitation = document.querySelector(".invitation");
+const sectionMedia = document.querySelector(".media");
+const sectionBlog = document.querySelector(".blog");
 
 function fadeHeader() {
   let top = window.pageYOffset || document.documentElement.scrollTop;
@@ -27,6 +30,9 @@ function fadeIn() {
   headerWrapper.classList.add("u-opaque");
   bodyNav.classList.add("u-visible");
   sectionsWrapper.classList.add("u-visible");
+  sectionInvitation.classList.add("u-visible");
+  sectionMedia.classList.add("u-visible");
+  sectionBlog.classList.add("u-visible");
 }
 
 function initPage() {
